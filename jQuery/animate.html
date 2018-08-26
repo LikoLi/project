@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function() {
+				// $("div").animate({
+				// 	left:'+=250px',
+				// 	opacity:'0.1',
+				// 	height: '+=150px',
+				// 	width: '+=150px'
+				// });
+				// $("div").animate({
+				// 	height: 'toggle'
+				// });
+				var div = $("div");
+				// div.animate({height: '300px', opacity: '0.4'}, "slow");
+				// div.animate({width: '300px', opacity: '0.8'}, "slow");
+				// div.animate({height: '100px', opacity: '0.4'}, "slow");
+				// div.animate({width: '100px', opacity: '0.8'}, "slow");
+				div.text("animate");
+				div.animate({left: '100px'}, "slow");
+				div.animate({fontSize: '3em', width: '200px'}, "slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button type="button">Start</button>
+	<div style="background: #98bf21; height: 100px; width: 100px; position: absolute;"></div>
+</body>
+</html>
